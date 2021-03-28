@@ -1,0 +1,209 @@
+{
+// Editor
+    "editor.codeLens": true,
+    "editor.cursorBlinking": "smooth",
+    "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 13,
+    "editor.formatOnPaste": false,
+    "editor.minimap.enabled": true,
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.showSlider": "always",
+    "editor.renderWhitespace": "none",
+    "editor.selectionHighlight": true,
+    "editor.suggestSelection": "first",
+    "editor.wordSeparators": "`~!@#$%^&*()_-=+[{]}\\|;:'\",.<>/?",
+
+// Error Lens 123 abc 1il 0Oo
+    "errorLens.addAnnotationTextPrefixes": true,
+    "errorLens.gutterIconsEnabled": true,
+
+// Files
+    "files.trimFinalNewlines": false,
+    "files.trimTrailingWhitespace": false,
+
+// GitLens
+    "gitlens.defaultDateFormat": "YYYY.MM.DD - HH:mm",
+    "gitlens.defaultDateShortFormat": "YY.MM.DD",
+    "gitlens.defaultTimeFormat": "HH:MM",
+
+// Telemetry
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+
+// todo-tree Extension
+    "todo-tree.general.statusBar": "current file",
+    "todo-tree.tree.buttons.expand": false,
+    "todo-tree.tree.buttons.filter": true,
+    "todo-tree.tree.buttons.groupByTag": true,
+    "todo-tree.tree.buttons.refresh": true,
+    "todo-tree.tree.buttons.scanMode": true,
+
+    "todo-tree.general.tagGroups": {
+        "ALERT": [
+            "ALERT",
+            "CAUTION",
+            "WARNING",
+            "WARN"
+        ],
+        "TEST": [
+            "TEST",
+            "TESTING",
+            "testisen3"
+        ],
+        "FIX": [
+            "FIX",
+            "FIXME",
+            "FIXIT"
+        ],
+        "QUESTION": [
+            "QUESTION",
+            "?"
+        ]
+    },
+    "todo-tree.general.tags": [
+        "ALERT",
+            "CAUTION",
+            "WARNING",
+            "WARN",
+        "BUG",
+        "DEBUG",
+        "DONE",
+        "FIX",
+            "FIXME",
+            "FIXIT",
+        "HACK",
+        "NOTE",
+        "TEST",
+            "TESTING",
+            "testisen3",
+        "TODO",
+        "QUESTION",
+            "?",
+        "[ ]",
+        "[x]"
+    ],
+    "todo-tree.highlights.customHighlight": {
+        "ALERT": {
+            "background": "#ff0000",
+            "foreground": "#000000",
+            "type": "text-and-comment",
+            "fontWeight": "bolder",
+            "icon": "alert",
+            "gutterIcon": true,
+            "iconColour": "#ff0000",
+            "rulerColour": "#ff0000",
+            "rulerOpacity": "100",
+            "rulerLane":"full"
+        },
+        "BUG": {
+            "foreground": "#b300b3",
+            "type": "text-and-comment",
+            "icon": "bug",
+            "rulerColour": "#b300b3",
+            "rulerOpacity": "50"
+        },
+        "DEBUG": {
+            "foreground": "#b300b3",
+            "type": "text-and-comment",
+            "icon": "chevron-up",
+            "rulerColour": "#b300b3",
+            "rulerOpacity": "50"
+        },
+        "DONE": {
+            "foreground": "#00cc00",
+            "type": "text-and-comment",
+            "icon": "check"
+        },
+        "FIX": {
+            "foreground": "#ff9933",
+            "type": "text-and-comment",
+            "icon": "chevron-down",
+            "rulerColour": "#ff9933",
+            "rulerOpacity": "50"
+        },
+        "HACK": {
+            "foreground": "#ff9933",
+            "type": "text-and-comment",
+            "icon": "terminal"
+        },
+        "NOTE": {
+            "foreground": "#1a75ff",
+            "type": "text-and-comment",
+            "icon": "bookmark",
+            "rulerColour": "#1a75ff",
+            "rulerOpacity": "50"
+        },
+        "TEST": {
+            "foreground": "#e6e600",
+            "type": "text-and-comment",
+            "icon": "beaker",
+            "rulerColour": "#e6e600",
+            "rulerOpacity": "50"
+        },
+        "TODO": {
+            "foreground": "#ff8000",
+            "type": "text-and-comment",
+            "icon": "chevron-right",
+            "rulerColour": "#ff8000",
+            "rulerOpacity": "50"
+        },
+        "QUESTION": {
+            "foreground": "#1a75ff",
+            "type": "text-and-comment",
+            "icon": "question",
+            "rulerColour": "#1a75ff",
+            "rulerOpacity": "50"
+        },
+        "[ ]": {
+            "foreground": "#b30000",
+            "type": "text-and-comment",
+            "icon": "chevron-right",
+            "rulerColour": "#b30000",
+            "rulerOpacity": "50"
+        },
+        "[x]": {
+            "foreground": "#00cc00",
+            "type": "text-and-comment",
+            "icon": "check"
+        }
+    },
+    "todo-tree.highlights.defaultHighlight": {
+        "foregorund": "#ff6600",
+        "type:": "text"
+    },
+
+    "todo-tree.highlights.schemes": ["file","untitled","vscode-userdata","output"],
+    "todo-tree.tree.expanded": false,
+    "todo-tree.tree.flat": false,
+    "todo-tree.tree.labelFormat": "${tag} ${after}",
+
+    "todo-tree.regex.regex": "((//|\\s#|REM|:|;)[ ]*($TAGS)[^\\n]*)|(/\\*(\\*?\\s*)*?($TAGS)(.|\\n|\\r)*?\\*/)|(<#(\\s|\\n|\\r)*?($TAGS)(.|\\n|\\r)*?#>)|(<!--[\\s|\\n|\\r]*?)($TAGS)(.|\\n|\\r)*?(-->)|(:[ ]'[\\s|\\n|\\r]*?)($TAGS)(.|\\n|\\r)*?([ ]')",
+    // Single Line              ((//|\\s#|REM|:|;)[ ]*($TAGS)[^\\n]*)|
+    // TODO Block Comment       ((//|\\s#|REM|:|;)[ ]*($TAGS).*(\\n\\s*//\\s{2,}.*)*|
+    // Java MultiLine           (/\\*(\\*?\\s*)*?($TAGS)(.|\\n|\\r)*?\\*/)|
+    // Powershell MultiLine     (<#(\\s|\\n|\\r)*?($TAGS)(.|\\n|\\r)*?#>)|
+    // HTML/XML MultiLine       (<!--[\\s|\\n|\\r]*?)($TAGS)(.|\\n|\\r)*?(-->)|
+    // BAT MultiLine            (:[ ]'[\\s|\\n|\\r]*?)($TAGS)(.|\\n|\\r)*?([ ]')
+
+    // BUG Subtags does not seem to work
+    "todo-tree.regex.subTagRegex": "^\\s*\\((.*)\\)",
+
+    "todo-tree.tree.scanMode": "workspace",
+    "todo-tree.tree.showCountsInTree": true,
+    "todo-tree.tree.showScanModeButton": true,
+
+// VS Intelli Code
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+
+// WORKBENCH
+    "workbench.colorCustomizations": {
+        "minimap.selectionHighlight": "#ffe8e8",
+        // BUG findMatchHiglight does not work
+        "minimap.findMatcinghHighlight": "#ff0000"
+    },
+    "workbench.colorTheme": "Default Dark+",
+    "workbench.editor.focusRecentEditorAfterClose": false,
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.iconTheme": "vscode-icons",
+}
