@@ -26,3 +26,4 @@ code --install-extension usernamehw.errorlens
 code --install-extension viablelab.bracket-padder
 code --install-extension VisualStudioExptTeam.vscodeintellicode
 code --install-extension vscode-icons-team.vscode-icons
+code --install-extension yzhang.markdown-all-in-one
