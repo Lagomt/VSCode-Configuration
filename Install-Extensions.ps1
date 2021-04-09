@@ -20,6 +20,7 @@ code --install-extension myxvisual.vscode-ts-uml
 code --install-extension quicktype.quicktype
 code --install-extension redhat.vscode-yaml
 code --install-extension rogalmic.bash-debug
+code --install-extension shd101wyy.markdown-preview-enhanced
 code --install-extension shuworks.vscode-table-formatter
 code --install-extension tomoki1207.pdf
 code --install-extension usernamehw.errorlens
@@ -27,3 +28,4 @@ code --install-extension viablelab.bracket-padder
 code --install-extension VisualStudioExptTeam.vscodeintellicode
 code --install-extension vscode-icons-team.vscode-icons
 code --install-extension yzhang.markdown-all-in-one
+code --install-extension mark-wiemer.vscode-autohotkey-plus-plus
