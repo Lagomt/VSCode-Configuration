@@ -32,18 +32,24 @@
         "gitlens.defaultDateShortFormat": "YY.MM.DD",
         "gitlens.defaultTimeFormat": "HH:MM",
     
+    // Python
+        "python.showStartPage": false,
+    
     // Spell Right
-        "spellright.language": [ "en","sv" ], // Windows 10
-        // "spellright.language": [ "en-US","en-GB","sv-SE" ], // Windows 10 (groupDicitonaries = false)
-        // "spellright.language": [ "English (American)","English (British)","Swedish" ], // Linux
+        "spellright.documentTypes": [ "plaintext", "markdown", "latex" ],
         "spellright.groupDictionaries": true,
-        "spellright.notificationClass": "warning",
         "spellright.ignoreRegExpsByClass": {
             "markdown": [ "/&amp;/g", "/&nbsp;/g" ],
             "cpp": [ "/#include\\s+\\\".+\\\"/g" ],
             "html": [ "/<script>[^]*?</script>/gm" ],
             "latex": [ "/\\\\begin{minted}[^]*?\\\\end{minted}/gm" ]
         },
+        // spellright.language settings
+            // "spellright.language": [ "en-US","en-GB","sv-SE" ],                                      // Windows 10 ( groupDicitonaries = false )
+            "spellright.language": [ "en","sv" ],                                                       // Windows 10 ( groupDictionaries = true )
+            // "spellright.language": [ "English (American)","English (British)","Swedish" ],           // Linux
+    
+        "spellright.notificationClass": "warning",
         "spellright.parserByClass": {
             // Have not tested everything here yet.
             "bash": { "parser": "code" },
@@ -231,9 +237,15 @@
             // BUG findMatchHiglight does not work
             "minimap.findMatcinghHighlight": "#ff0000"
         },
+        "vsicons.dontShowNewVersionMessage": true,
         "workbench.colorTheme": "Default Dark+",
         "workbench.editor.focusRecentEditorAfterClose": false,
         "workbench.editor.highlightModifiedTabs": true,
-        "workbench.iconTheme": "vscode-icons",
-        "vsicons.dontShowNewVersionMessage": true
+        "workbench.editorAssociations": [
+            {
+                "viewType": "jupyter.notebook.ipynb",
+                "filenamePattern": "*.ipynb"
+            }
+        ],
+        "workbench.iconTheme": "vscode-icons"        
     }
