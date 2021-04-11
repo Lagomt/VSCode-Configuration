@@ -14,7 +14,7 @@
         "editor.suggestSelection": "first",
         "editor.wordSeparators": "`~!@#$%^&*()_-=+[{]}\\|;:'\",.<>/?",
     
-    // Error Lens
+    // Error Lens - Extension: usernamehw.errorlens
         "errorLens.addAnnotationTextPrefixes": true,
         "errorLens.addNumberOfDiagnostics": true,
         "errorLens.gutterIconsEnabled": true,
@@ -27,15 +27,15 @@
         "files.trimFinalNewlines": false,
         "files.trimTrailingWhitespace": false,
     
-    // GitLens
+    // GitLens - Extension: eamodio.gitlens
         "gitlens.defaultDateFormat": "YYYY.MM.DD - HH:mm",
         "gitlens.defaultDateShortFormat": "YY.MM.DD",
         "gitlens.defaultTimeFormat": "HH:MM",
     
-    // Python
+    // Python - Extension: ms-python.python
         "python.showStartPage": false,
     
-    // Spell Right
+    // Spell Right - Extenion: ban.spellright
         "spellright.documentTypes": [ "plaintext", "markdown", "latex" ],
         "spellright.groupDictionaries": true,
         "spellright.ignoreRegExpsByClass": {
@@ -66,7 +66,7 @@
         "telemetry.enableCrashReporter": false,
         "telemetry.enableTelemetry": false,
     
-    // todo-tree Extension
+    // todo-tree - Extension: gruntfuggly.todo-tree
         "todo-tree.general.statusBar": "current file",
         "todo-tree.tree.buttons.expand": false,
         "todo-tree.tree.buttons.filter": true,
@@ -215,26 +215,26 @@
     
         "todo-tree.regex.regex": "((//|\\s#|REM|:|;)[ ]*($TAGS)[^\\n]*)|(/\\*(\\*?\\s*)*?($TAGS)(.|\\n|\\r)*?\\*/)|(<#(\\s|\\n|\\r)*?($TAGS)(.|\\n|\\r)*?#>)|(<!--[\\s|\\n|\\r]*?)($TAGS)(.|\\n|\\r)*?(-->)|(:[ ]'[\\s|\\n|\\r]*?)($TAGS)(.|\\n|\\r)*?([ ]')",
         // Single Line              ((//|\\s#|REM|:|;)[ ]*($TAGS)[^\\n]*)|
-        // TODO Block Comment       ((//|\\s#|REM|:|;)[ ]*($TAGS).*(\\n\\s*//\\s{2,}.*)*|
+        // TODO : Block Comment     ((//|\\s#|REM|:|;)[ ]*($TAGS).*(\\n\\s*//\\s{2,}.*)*|
         // Java MultiLine           (/\\*(\\*?\\s*)*?($TAGS)(.|\\n|\\r)*?\\*/)|
         // Powershell MultiLine     (<#(\\s|\\n|\\r)*?($TAGS)(.|\\n|\\r)*?#>)|
         // HTML/XML MultiLine       (<!--[\\s|\\n|\\r]*?)($TAGS)(.|\\n|\\r)*?(-->)|
         // BAT MultiLine            (:[ ]'[\\s|\\n|\\r]*?)($TAGS)(.|\\n|\\r)*?([ ]')
     
-        // BUG Subtags does not seem to work
+        // BUG : Subtags does not seem to work
         "todo-tree.regex.subTagRegex": "^\\s*\\((.*)\\)",
     
-        "todo-tree.tree.scanMode": "workspace",
+        "todo-tree.tree.scanMode": "open files",
         "todo-tree.tree.showCountsInTree": true,
         "todo-tree.tree.showScanModeButton": true,
     
-    // VS Intelli Code
+    // VS Intelli Code - Extension: visualstudioexptteam.vscodeintellicode
         "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     
     // WORKBENCH
         "workbench.colorCustomizations": {
             "minimap.selectionHighlight": "#ffe8e8",
-            // BUG findMatchHiglight does not work
+            // BUG : findMatchHiglight does not work
             "minimap.findMatcinghHighlight": "#ff0000"
         },
         "vsicons.dontShowNewVersionMessage": true,
@@ -243,7 +243,7 @@
         "workbench.editor.highlightModifiedTabs": true,
         "workbench.editorAssociations": [
             {
-                "viewType": "jupyter.notebook.ipynb",
+                "viewType": "jupyter.notebook.ipynb",                                                   // Extension: ms-toolsai.jupyter
                 "filenamePattern": "*.ipynb"
             }
         ],
