@@ -4,7 +4,7 @@
         "editor.cursorBlinking": "smooth",
         "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
         "editor.fontLigatures": true,
-        "editor.fontSize": 13,
+        "editor.fontSize": 13,                                                                          // Use 13 for Fira Code and 14 for Consolas
         "editor.formatOnPaste": false,
         "editor.minimap.enabled": true,
         "editor.minimap.renderCharacters": false,
@@ -247,5 +247,5 @@
                 "filenamePattern": "*.ipynb"
             }
         ],
-        "workbench.iconTheme": "vscode-icons"        
+        "workbench.iconTheme": "vscode-icons"    
     }
