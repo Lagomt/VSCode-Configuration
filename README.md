@@ -6,7 +6,7 @@ Configuration files for Visual Studio Code
 
 ### Spell Right
 
-Publisher: Bartosz Antosik
+Publisher: Bartosz Antosik\
 ID: ban.spellright
 
 #### Dictionaries

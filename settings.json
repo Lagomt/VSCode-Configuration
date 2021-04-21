@@ -32,6 +32,10 @@
         "gitlens.defaultDateShortFormat": "YY.MM.DD",
         "gitlens.defaultTimeFormat": "HH:MM",
     
+    // Powershell
+        "powershell.startAutomatically": false,
+        "powershell.cwd": "${fileDirname}",
+    
     // Python - Extension: ms-python.python
         "python.showStartPage": false,
     
@@ -65,6 +69,12 @@
     // Telemetry
         "telemetry.enableCrashReporter": false,
         "telemetry.enableTelemetry": false,
+    
+    // Terminal
+        "terminal.integrated.fontSize": 13,
+        "terminal.integrated.cwd": "${fileDirname}",
+        "terminal.integrated.wordSeparators": " ()[]{}',\"`─_;:.",
+        
     
     // todo-tree - Extension: gruntfuggly.todo-tree
         "todo-tree.general.statusBar": "current file",
@@ -214,12 +224,15 @@
         "todo-tree.tree.labelFormat": "${tag} ${after}",
     
         "todo-tree.regex.regex": "((//|\\s#|REM|:|;)[ ]*($TAGS)[^\\n]*)|(/\\*(\\*?\\s*)*?($TAGS)(.|\\n|\\r)*?\\*/)|(<#(\\s|\\n|\\r)*?($TAGS)(.|\\n|\\r)*?#>)|(<!--[\\s|\\n|\\r]*?)($TAGS)(.|\\n|\\r)*?(-->)|(:[ ]'[\\s|\\n|\\r]*?)($TAGS)(.|\\n|\\r)*?([ ]')",
-        // Single Line              ((//|\\s#|REM|:|;)[ ]*($TAGS)[^\\n]*)|
-        // TODO : Block Comment     ((//|\\s#|REM|:|;)[ ]*($TAGS).*(\\n\\s*//\\s{2,}.*)*|
-        // Java MultiLine           (/\\*(\\*?\\s*)*?($TAGS)(.|\\n|\\r)*?\\*/)|
-        // Powershell MultiLine     (<#(\\s|\\n|\\r)*?($TAGS)(.|\\n|\\r)*?#>)|
-        // HTML/XML MultiLine       (<!--[\\s|\\n|\\r]*?)($TAGS)(.|\\n|\\r)*?(-->)|
-        // BAT MultiLine            (:[ ]'[\\s|\\n|\\r]*?)($TAGS)(.|\\n|\\r)*?([ ]')
+        
+        // NOTE : Remember to separate each string with | when assembeling sections for "todo-tree.regex.regex"
+        // DONE : Single Line               ((//|\\s#|REM|:|;)[ ]*($TAGS)[^\\n]*)
+        // TODO : Block Comment             ((//|\\s#|REM|:|;)[ ]*($TAGS)[^\\n|^\\r]*)
+        // TODO : Block Comment             ((//|\\s#|REM|:|;)[ ]*($TAGS).*(\\n\\s*//\\s{2,}.*)*
+        // DONE : Java/CSS MultiLine        (/\\*(\\*?\\s*)*?($TAGS)(.|\\n|\\r)*?\\*/)
+        // DONE : Powershell MultiLine      (<#(\\s|\\n|\\r)*?($TAGS)(.|\\n|\\r)*?#>)
+        // DONE : HTML/XML MultiLine        (<!--[\\s|\\n|\\r]*?)($TAGS)(.|\\n|\\r)*?(-->)
+        // DONE : BAT MultiLine             (:[ ]'[\\s|\\n|\\r]*?)($TAGS)(.|\\n|\\r)*?([ ]')
     
         // BUG : Subtags does not seem to work
         "todo-tree.regex.subTagRegex": "^\\s*\\((.*)\\)",
@@ -238,7 +251,6 @@
             "minimap.findMatcinghHighlight": "#ff0000"
         },
         "vsicons.dontShowNewVersionMessage": true,
-        "workbench.colorTheme": "Default Dark+",
         "workbench.editor.focusRecentEditorAfterClose": false,
         "workbench.editor.highlightModifiedTabs": true,
         "workbench.editorAssociations": [
@@ -247,5 +259,5 @@
                 "filenamePattern": "*.ipynb"
             }
         ],
-        "workbench.iconTheme": "vscode-icons"    
+        "workbench.iconTheme": "vscode-icons"
     }
