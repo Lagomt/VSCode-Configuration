@@ -6,10 +6,9 @@ Open file in VSCode to see highlighting
 
 For specific grouping, see settings.json
 
+```Java
 // ALERT
 // CAUTION
-// WARNING
-// WARN
 // BUG
 // DEBUG
 // DONE
@@ -18,86 +17,122 @@ For specific grouping, see settings.json
 // FIXIT
 // HACK
 // NOTE
+// INFO
 // TEST
 // TESTING
 // testisen3
 // TODO
+// WARNING
+// WARN
 // QUESTION
 // ?
 // [ ]
 // [x]
+```
+
+## Triggers
+
+Todo Tree is triggered by comment character, i.e. double slash "//" for java. Followed by a $TAG in $TAGS i.e. "TODO". Followed by either a space, newline/carriage return or colon.
+
+### Valid Trigger Syntax
+
+First line using newline [\n\r]
+Second line using space \s
+Third line using colon
+
+```Java
+// TODO
+// TODO 
+// TODO:
+```
+
+Below is the preffered method for readablility (subjectivly).
+
+```Java
+// TODO : Single Line Comment
+
+// TODO
+//  Block Comment without title.
+
+// TODO : Title
+//  Block Comment
+
+/*
+    TODO
+    Multiline Comment without title.
+*/
+
+/*
+    TODO : Title
+    Multiline Comment
+*/
+```
 
 ## Language Support
 
 ### Java
 
+```Java
     // DONE : Java Comment
 
-    // TODO : Java Block Comment
-    //  All lines following triggerring line with $TAG must be preceeded by two spaces [ ]{2} or one tab \t.
+    // DONE : Java Block Comment
+    //  All lines following triggerring line with $TAG must be preceeded by two spaces [ ]{2}.
     //  Third line
 
     /* 
         DONE Java
         MultiLine Comment
     */
+```
 
 ### BATCH
 
+```Batch
     REM DONE : BATCH Comment
 
     : ' 
         DONE : BATCH
         Multiline Comment
     '
+```
 
 ### Powershell/Python
 
+```Powershell
     # DONE : Powershell/Python Block Comment
 
-    # TODO : Powershell/Python
-    # All lines following triggerring line with $TAG must be preceeded by two spaces [ ]{2} or one tab \t.
-    # Third line 
-
-    // ? NOTE TO SELF
-        pusedo regex
-        whatever ($TAGS)*(\n|\r) (ev reverse lookup \s eller  whatever
+    # DONE : Powershell/Python
+    #  All lines following triggerring line with $TAG must be preceeded by two spaces [ ]{2}.
+    #  Third line 
 
     <# 
         DONE : Powershell 
         MultiLine Comment
     #>
+```
 
 ### XML/HTML
 
+```XML
     <!-- DONE : XML/HTML comment -->
 
     <!-- 
         DONE : XML/HTML
         MultiLine Comment
     -->
+```
 
 ### CSS
 
+``` CSS
     /* DONE : CSS */
 
     /*
         DONE : CSS
         Multiline Comment
     */
+```
 
 ## Notes
 
 Source and ReadMe: [Gruntfuggly.todo-tree](https://github.com/Gruntfuggly/todo-tree)
-
-Notera att kommentarerna visas här i editorn, varningar visas i marginalen. Nästan alla visas i overviewn till höger i scrollisten
-och samtliga dyker upp i trädet (egen knapp för att öppna trädet aldra längst till höger)
-
-Alla keywords som den stödjer har du ovan, du kan även (typ) se grupperingen av dem där. (Fix, Hack och Todo är däremot 3 sepparata grupperingar som ser likadana ut)
-För att se alla tags och faktisk indelning kan du kolla under "todo-tree.general.tags" och "todo-tree.general.tagGroups"
-
-Skit som inte riktigt funkar som det ska, men som jag inte orkar fixa nu:
-
-- Regex för substräng
-- Block comments are currently not supported
-- knappar för att hantera trädet (refresh, filter osv) syns inte.
